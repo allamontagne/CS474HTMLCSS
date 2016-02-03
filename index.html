@@ -1,14 +1,17 @@
+<!-- iPhone compatibility code -->
+<link rel="apple-touch-icon" href="appicon.png" />
+<link rel="apple-touch-startup-image" href="startup.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-webapp-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
 <html>
 	<head>
 		<title>MyApp</title>
 	</head>
 
-	<link rel="apple-touch-icon" href="appicon.png" />
-	<link rel="apple-touch-startup-image" href="startup.png">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-webapp-status-bar-style" content="black">
-<meta name="viewport" content="width=device-width, user-scalable=no" />
 
 	<style type="text/css">
 		body {
@@ -19,8 +22,20 @@
 		 h2 {
 			 font-size:22px;
 			 font-weight:300;
-			color:#aaa;
+			 color:#aaa;
 		}
+
+		.button {
+			background:#333;
+			width:100px;
+			color:#fff;
+			height:20px;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+			border-radius: 20px;
+			text-align:center;
+}
 	</style>
 
 	<body>
@@ -34,6 +49,7 @@
 		</ul>
 
 		<h3>A nice button</h3>
+		<div class='button' onclick="alert('Hello world!')">I'm a button</div>
 
 		<h3>An invisible seal</h3>
 		<p><img width="50" class="opacity" src="seal.png" /></p>
