@@ -36,6 +36,23 @@
 			border-radius: 20px;
 			text-align:center;
 }
+
+.box{
+	width: 100px;
+	padding: 25px;
+	border: 2px solid black;
+	color: white;
+	display: flex;
+}
+
+.firstBox {
+		background-color: navy;
+}
+
+.secondBox{
+	background-color: red;
+}
+
 	</style>
 
 	<body>
@@ -49,7 +66,7 @@
 		</ul>
 
 		<h3>A nice button</h3>
-		<div class='button' onclick="alert('Hello world!')">Press me, I talk!</div>
+		<div class='button' onclick="alert('Hello world!')">Press me!</div>
 
 		<h3>An invisible seal</h3>
 		<p><img width="50" class="opacity" src="seal.png" /></p>
@@ -60,7 +77,10 @@
 		</video>
 
 		<h3>Two boxes side by side</h3>
-		<div> </div>
+		<div class = "box">
+		<div class = "firstBox">BOX!</div>
+		<div class= "secondBox">OTHER BOX!</div>
+	</div>
 
 	</body>
 </html>
